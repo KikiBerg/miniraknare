@@ -18,3 +18,16 @@ let operator = prompt(
 let calculation;
 
 // 4. if-else-if
+if (operator === '+') {
+    calculation = num1 + num2;
+    alert (`Resultatet av ${num1} + ${num2} är ${calculation}`);
+} else if (operator === '-') {
+    calculation = num1 - num2;
+    alert (`Resultatet av ${num1} - ${num2} är ${calculation}`);
+} else if (operator === '*') {
+    calculation = num1 * num2;
+    alert (`Resultatet av ${num1} * ${num2} är ${calculation}`);
+} else if (operator === '/') {
+    calculation = num1 / num2;
+    alert (`Resultatet av ${num1} / ${num2} är ${calculation}`);
+} 
