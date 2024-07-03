@@ -1,3 +1,4 @@
+// hej
 alert('Välkommen till Miniräknaren!');
 
 // 1. Skapa en prompt som frågar om ett valfritt tal. Spara undan i en variabel.
@@ -18,22 +19,25 @@ let operator = prompt(
 let calculation;
 
 // 4. if-else-if
-if (operator === "+") {
-    calculation = num1 + num2;
-    alert(`Resultatet av ${num1} + ${num2} är ${calculation}`);
-} else if (operator === "-") {
-    calculation = num1 - num2;
-    alert(`Resultatet av ${num1} - ${num2} är ${calculation}`);
-} else if (operator === "*") {
-    calculation = num1 * num2;
-    alert(`Resultatet av ${num1} * ${num2} är ${calculation}`);
-} else if (operator === "/") {
-    if (num2 !== 0) {
-        calculation = num1 / num2;
-        alert(`Resultatet av ${num1} / ${num2} är ${calculation}`);
-    } else {
-        alert("Error: Division med noll är inte tillåtet!");
-    }
+if (operator === '+') {
+  calculation = num1 + num2;
+  alert(`Resultatet av ${num1} + ${num2} är ${calculation}`);
+} else if (operator === '-') {
+  calculation = num1 - num2;
+  alert(`Resultatet av ${num1} - ${num2} är ${calculation}`);
+} else if (operator === '*') {
+  calculation = num1 * num2;
+  alert(`Resultatet av ${num1} * ${num2} är ${calculation}`);
+} else if (operator === '/') {
+  if (num2 !== 0) {
+    calculation = num1 / num2;
+    alert(`Resultatet av ${num1} / ${num2} är ${calculation}`);
+  } else {
+    alert('Error: Division med noll är inte tillåtet!');
+  }
 } else {
-    alert("Ogiltigt räknesätt. Vänligen använd +, -, * eller /");
+  alert('Ogiltigt räknesätt. Vänligen använd +, -, * eller /');
 }
+
+// hejdå
+alert('Tack för att du använde Miniräknaren. Hej då!');
