@@ -18,16 +18,22 @@ let operator = prompt(
 let calculation;
 
 // 4. if-else-if
-if (operator === '+') {
+if (operator === "+") {
     calculation = num1 + num2;
-    alert (`Resultatet av ${num1} + ${num2} är ${calculation}`);
-} else if (operator === '-') {
+    alert(`Resultatet av ${num1} + ${num2} är ${calculation}`);
+} else if (operator === "-") {
     calculation = num1 - num2;
-    alert (`Resultatet av ${num1} - ${num2} är ${calculation}`);
-} else if (operator === '*') {
+    alert(`Resultatet av ${num1} - ${num2} är ${calculation}`);
+} else if (operator === "*") {
     calculation = num1 * num2;
-    alert (`Resultatet av ${num1} * ${num2} är ${calculation}`);
-} else if (operator === '/') {
-    calculation = num1 / num2;
-    alert (`Resultatet av ${num1} / ${num2} är ${calculation}`);
-} 
+    alert(`Resultatet av ${num1} * ${num2} är ${calculation}`);
+} else if (operator === "/") {
+    if (num2 !== 0) {
+        calculation = num1 / num2;
+        alert(`Resultatet av ${num1} / ${num2} är ${calculation}`);
+    } else {
+        alert("Error: Division med noll är inte tillåtet!");
+    }
+} else {
+    alert("Ogiltigt räknesätt. Vänligen använd +, -, * eller /");
+}
